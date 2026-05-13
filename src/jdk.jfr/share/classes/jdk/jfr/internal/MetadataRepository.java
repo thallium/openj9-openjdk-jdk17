@@ -85,6 +85,7 @@ public final class MetadataRepository {
                     pEventType.setEventHook(true);
                     if (!pEventType.isMethodSampling()) {
                         requestHooks.add(new RequestHook(pEventType));
+						System.out.println("Add periodic events " + type.getName());
                     }
                 }
                 nativeControls.add(new EventControl(pEventType));
